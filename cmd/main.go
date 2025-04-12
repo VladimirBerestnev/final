@@ -23,5 +23,13 @@ func main() {
 	fmt.Println(tasks.GetLetters("gdh8hfhf9hdf0fb945"))
 	//Task 6
 	tasks.ReadSqrt()
-
+	//Task 7
+	stack := tasks.NewStack([]int{1, 2, 3, 4, 5})
+	stack.Print()
+	stack.Push(7)
+	stack.Print()
+	stack.Pop()
+	stack.Print()
+	fmt.Println(stack.Top())
+	fmt.Println(stack.IsEmpty())
 }
